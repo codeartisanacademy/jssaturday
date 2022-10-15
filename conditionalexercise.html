@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conditional Exercise</h1>
+
+    <script>
+        // ask using prompt for an email address
+        const email = window.prompt("Enter your email address: ");
+        
+        // check if the email address ends with .com
+        // if yes write to console "correct email", else write "wrong email"
+        if(email.endsWith(".id")){
+            
+            alert("you are from Indonesia");
+
+        }else if(email.endsWith(".fr")){
+            
+            alert("you are from France");
+
+        }else if(email.endsWith(".de")){
+            
+            alert("you are from Germany");
+
+        }else{
+            
+            alert("you are from internet");
+            
+        }
+        
+    </script>
+</body>
+</html>

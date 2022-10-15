@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h1>String Methods</h1>
+    <script>
+        const email = "john@gmail.com";
+        console.log(email.indexOf("@gmail.com")); // it return the index
+        console.log(email.indexOf("x")); // it says -1 of not found
+
+        console.log(email.slice(5)); // returns gmail.com
+        console.log(email.slice(2,4))
+
+        console.log(email.replace("gmail.com", "yahoo.com"));
+
+        console.log(email.startsWith("j"));
+        console.log(email.endsWith(".com"));
+
+        console.log(email.substr(5,5)); // gmail start at index 5 and get 5 characters
+
+        const dirtyStrings = " this has many    white space          ";
+        console.log(dirtyStrings.length);
+        const cleanedStrings = dirtyStrings.trim();
+        console.log(cleanedStrings.length);
+    </script>
+</body>
+</html>

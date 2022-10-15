@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array</h1>
+
+    <script>
+        let cities = ["jakarta", "bandung", "medan"];
+
+        console.log(cities.length);
+
+        console.log(cities[1]);
+        
+        cities[2] = "surabaya";
+
+        console.log(cities)
+
+        // add an item into an array, using push
+        cities.push("palembang");
+
+        console.log(cities)
+
+        // pop to remove the last item inside the array
+        cities.pop();
+        console.log(cities)
+
+        // remove the first item inside the array
+        cities.shift();
+        console.log(cities)
+
+        const countries = ['indonesia', 'singapore', 'malaysia'];
+        console.log(countries.indexOf("thailand")); // return the index of the item or -1 if not available
+
+        console.log(countries.toString())
+
+        const countries2 = ['japan', 'south korea', 'china'];
+
+        const asia = countries.concat(countries2);
+
+        console.log(asia);
+
+        
+    </script>
+</body>
+</html>

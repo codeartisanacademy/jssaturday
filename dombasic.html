@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Basic</title>
+</head>
+<body>
+    <h1>DOM (Document Object Model)  Basic</h1>
+    <a href="#" id="like-button">Like</a>
+    <a href="http://google.com" id="googleLink">Go to Google</a>
+    <h1>Another heading</h1>
+    <p id="para">
+        this is a paragraph with a <strong>child</strong>. 
+
+    </p>
+    <a href="#" id="hello">Say Hello</a>
+
+    <script>
+        const likeButton = document.getElementById('like-button');
+        likeButton.addEventListener("click", function(){
+            likeButton.innerText = 'Unlike';
+            likeButton.style.color = "red";
+        } )
+
+        const heading = document.getElementsByTagName('h1');
+        console.log(heading);
+
+        const googleLink = document.getElementById("googleLink");
+        console.log(googleLink.getAttribute("href"));
+
+        const body = document.getElementsByTagName("body")[0];
+        console.log(body.children.length);
+        console.log(body.children[0])
+
+        const para = document.getElementById('para');
+        console.log(para.children[0].innerText);
+
+        const linkHello = document.getElementById('hello');
+        linkHello.addEventListener("click", function(){
+            const helloElement = document.createElement("p");
+            helloElement.innerText = "hello there";
+            body.appendChild(helloElement);
+        } )
+    </script>
+</body>
+</html>
